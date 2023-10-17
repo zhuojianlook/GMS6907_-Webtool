@@ -1,11 +1,8 @@
 streamlit
-io
-streamlit
 pandas
-matplotlib.pyplot
 seaborn
 numpy
-matplotlib_venn
 base64
 requests
 scipy.stats
+openpyxl==3.1.2
