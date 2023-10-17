@@ -102,4 +102,4 @@ For queries, reach out to:
 
 # Sidebar
 st.sidebar.markdown("<div style='height:450px;'></div>", unsafe_allow_html=True)
-st.sidebar.image(image, use_column_width=True, caption="Official Logo")
+st.sidebar.image("Logo.png", use_column_width=True, caption="Official Logo")
