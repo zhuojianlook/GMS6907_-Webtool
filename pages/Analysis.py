@@ -24,7 +24,8 @@ def create_clustergram(genes, terms, scores):
     """
     # Create a dataframe for heatmap
     df_clustergram = pd.DataFrame({'Gene': genes, 'Term': terms, 'Score': scores})
-    df_clustergram = df_clustergram.pivot("Gene", "Term", "Score")
+    df_clustergram = df_clustergram.pivot(index="Gene", columns="Term", values="Score")
+
     
     # Handle NaN or infinite values
     df_clustergram = df_clustergram.fillna(0)  # fill NaN with zeros
@@ -264,7 +265,8 @@ def plot_enrichr_results(terms, scores, title="Enrichr Results", widget_key=None
     plt.figure(
         figsize=(12, 6)
     )  # Increase the figure size to provide more space for labels
-    sns.barplot(x=scores, y=terms, palette=selected_color)
+    sns.barplot(x=scores, y=terms, hue=terms, palette=selected_color, legend=False)
+
 
     plt.title(title)
     plt.xlabel("-Log10(p-value)")
