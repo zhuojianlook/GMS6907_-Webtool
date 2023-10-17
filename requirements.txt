@@ -1,0 +1,12 @@
+streamlit
+PIL
+io
+streamlit
+pandas
+matplotlib.pyplot
+seaborn
+numpy
+matplotlib_venn
+base64
+requests
+scipy.stats
