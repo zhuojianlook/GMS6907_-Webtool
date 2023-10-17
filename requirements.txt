@@ -2,7 +2,6 @@ streamlit
 pandas
 seaborn
 numpy
-base64
 requests
 scipy.stats
 openpyxl==3.1.2
