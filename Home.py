@@ -1,10 +1,10 @@
 import streamlit as st
-from PIL import Image
+#from Pillow import Image
 import io
 
 # Open the image file
-with open("Logo.png", "rb") as image_file:
-    image = Image.open(io.BytesIO(image_file.read()))
+# with open("Logo.png", "rb") as image_file:
+#    image = Image.open(io.BytesIO(image_file.read()))
 
 # Fun Colors
 primary_color = "#ff6b6b"  # A bright, playful red
